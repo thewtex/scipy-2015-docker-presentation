@@ -1,9 +1,9 @@
 An Introduction Docker for Research Software Engineers
 =======================================================
-Kitware Tech Lunch
-------------------
+SciPy 2015
+----------
 
-:Date:   2015-02-10
+:Date:   2015-07-07
 :Author: Matt McCormick <matt.mccormick@kitware.com>
 
 Introduction
@@ -19,8 +19,7 @@ We will
 1) Generate an understanding of what Docker is by comparing it to existing
    technologies.
 2) Give an introduction to basic Docker concepts.
-3) Go through examples that demonstrate when and how it is beneficial to
-   take advantage of this tool.
+3) Describe how Docker fits into the scientific Python analysis workflow.
 
 
 Run the Presentation Live, Locally
@@ -46,7 +45,7 @@ Pull the image from DockerHub_.
   search, push, and pull images from public or private repositories. To
   download the image from DockerHub::
 
-    docker pull thewtex/kitware-techlunch-docker
+    docker pull thewtex/scipy-2015-docker-presentation
 
 If there are `permission denied` errors, make sure your user is in the
 `docker` group::
@@ -63,8 +62,8 @@ Build the image from its sources.
   image, like installing packages, compiling dependencies, editing
   configurations, etc.  To build the image::
 
-    git clone https://github.com/thewtex/kitware-techlunch-docker
-    cd kitware-techlunch-docker
+    git clone https://github.com/thewtex/scipy-2015-docker-presentation
+    cd scipy-2015-docker-presentation
     ./build.sh
 
 Run the Docker Image
@@ -73,8 +72,8 @@ Run the Docker Image
 To run the IPython notebook server, clone the Git repository if you have not
 already done so::
 
-  git clone https://github.com/thewtex/kitware-techlunch-docker
-  cd kitware-techlunch-docker
+  git clone https://github.com/thewtex/scipy-2015-docker-presentation
+  cd scipy-2015-docker-presentation
 
 Then run the `run.sh` script with a password of your choice::
 
