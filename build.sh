@@ -1,3 +1,3 @@
 #!/bin/sh
 
-docker build -t thewtex/kitware-techlunch-docker .
+docker build -t thewtex/scipy-2015-docker-presentation .

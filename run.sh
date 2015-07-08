@@ -5,9 +5,9 @@ if [ $# -lt 1 ]; then
   exit 1
 fi
 docker run -d \
-  --name techlunch \
+  --name scipy \
   -p 443:8888 \
   -v $PWD:/notebooks/:rw \
   --privileged=true \
   -e "PASSWORD=$1" \
-  thewtex/kitware-techlunch-docker
+  thewtex/scipy-2015-docker-presentation
